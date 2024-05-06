@@ -1,5 +1,5 @@
 {
-  "name": "eson",
+  "name": "eson6",
   "type": "module",
   "version": "0.0.0",
   "author": "BugDuck Team",
@@ -23,5 +23,8 @@
     "typescript": "^5.0.4",
     "vite": "^4.3.5",
     "vitest": "^0.34.0"
+  },
+  "publishConfig": {
+    "access": "public"
   }
 }
