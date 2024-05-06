@@ -1,12 +1,12 @@
-function eson6(data: Record<string, any>) {
-  let value = data
-  let result: Record<string, any> = {}
+function eson(data: Record<string, any>) {
+  const value = data
+  const result: Record<string, any> = {}
 
   function stringify() {
     for (const unit in value) {
       switch (value[unit].type) {
         case 'egroup': {
-          result[unit] = eson6(value[unit]).stringify()
+          result[unit] = eson(value[unit]).stringify()
           break
         }
         default: {
@@ -15,7 +15,7 @@ function eson6(data: Record<string, any>) {
         }
       }
     }
-    
+
     return result
   }
 
@@ -25,6 +25,6 @@ function eson6(data: Record<string, any>) {
   }
 }
 
-export default eson6
+export default eson
 export * from './parse'
 export * from './process'

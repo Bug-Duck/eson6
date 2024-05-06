@@ -1,16 +1,16 @@
 export function estring(data: string) {
-  let value = data
+  const value = data
 
   function toJson() {
     return JSON.stringify({
       type: 'estring',
-      value
+      value,
     })
   }
 
   return {
     value,
     toJson,
-    type: 'estring'
+    type: 'estring',
   }
 }

@@ -1,10 +1,10 @@
 export function egroup(data: string) {
-  let value = data
+  const value = data
 
   function toJson() {
     return JSON.stringify({
       type: 'egroup',
-      value
+      value,
     })
   }
 

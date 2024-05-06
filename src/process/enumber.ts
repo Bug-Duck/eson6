@@ -1,16 +1,16 @@
 export function enumber(data: number) {
-  let value = data
+  const value = data
 
   function toJson() {
     return JSON.stringify({
       type: 'enumber',
-      value: value.toString()
+      value: value.toString(),
     })
   }
 
   return {
     value,
     toJson,
-    type: 'enumber'
+    type: 'enumber',
   }
 }
