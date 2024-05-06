@@ -1,3 +1,3 @@
-import { so1ve } from "@so1ve/eslint-config";
+import { antfu } from '@antfu/eslint-config'
 
-export default so1ve();
+export default antfu({})
